@@ -1,39 +1,33 @@
-#include <stdio.h>#include <stdlib.h>
-#include <stdio.h>
 
-//promedia medio mal, hace un aproximado, ni idea x q, lo corrigo mas trade en mi casa
+#include <stdio.h>
+#include <stdlib.h>
+
 int n;
 int nactual ;
 float prom;
-int notas[1000];
 int valor;
+int valortemp;
 int main()  {
 
 
 
 printf("ingrese cantidad de alumnos \n" );
 scanf("%d",&n);
-while (nactual<n){
-    nactual++;
-printf("ingrese nota de alumno %d \n", nactual++);
-nactual =nactual-1;
-scanf("%d",&notas[nactual]);
+printf("cuando termine de cargar las notas ingrese -1 \n" );
+valortemp=0;
+while (valortemp!=-1){
 
+printf("ingrese nota de alumno %d \n", nactual++);
+scanf("%d",&valortemp);
+valor= valortemp + valor;
 
 }
 nactual=0;
 prom=0;
-while (nactual<n){
-valor= valor + notas[nactual];
-nactual++;
 
-
-
-}
 prom= valor/n;
 
 printf("su promedio de la clase es %f",prom );
-
 
 
 
